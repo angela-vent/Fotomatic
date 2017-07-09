@@ -174,9 +174,10 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #sign-up-section {
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     height: 28rem;
+    width: 100%;
   }
 
   #sign-up-cta {
@@ -185,6 +186,7 @@ header .mobile {
     height: auto;
     background-color: transparent;
     border: none;
+    margin: auto;
   }
 
   #sign-up-cta .content {
@@ -206,8 +208,8 @@ header .mobile {
 
 @media only screen and (max-width: 450px) {
   #sign-up-section {
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     height: 20rem;
   }
 
@@ -232,7 +234,7 @@ header .mobile {
 .feature {
   flex: 1;
   width: 50%;
-  height: 39.6875rem;
+  max-height: 39.6875rem;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
@@ -255,11 +257,12 @@ header .mobile {
   color: #4A4A4A;
   line-height: 1.2;
   max-height: 11.6875;
+  padding: 2.5rem 0;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
-  padding-top: 2.5rem;
+  /*padding-top: 2.5rem;*/
   font-size: 2.25rem;
   font-weight: bold;
 }
@@ -286,6 +289,7 @@ header .mobile {
   #features-section {
     flex-flow: column;
     padding: 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
   }
@@ -294,6 +298,13 @@ header .mobile {
     margin: 0;
     padding: 1rem 1rem 0 1rem;
     width: 100%;
+    max-height: 35rem;
+  }
+
+  .feature .content{
+    justify-content: center;
+    align-items: center;
+    /*padding-bottom: 4rem;*/
   }
 
   .feature h3{
@@ -406,7 +417,7 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
@@ -415,7 +426,7 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
-    font-size: 1rem; /*It's supposed to be 1.5rem*/
+    font-size: 1.5rem;
     line-height: 1.4;
   }
 }
