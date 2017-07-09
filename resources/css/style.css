@@ -206,6 +206,8 @@ header .mobile {
 
 @media only screen and (max-width: 450px) {
   #sign-up-section {
+    align-items: center;
+    justify-content: center;
     height: 20rem;
   }
 
@@ -230,7 +232,7 @@ header .mobile {
 .feature {
   flex: 1;
   width: 50%;
-  height: 30.2rem;
+  height: 39.6875rem;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
@@ -284,11 +286,20 @@ header .mobile {
   #features-section {
     flex-flow: column;
     padding: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
+    width: 100%;
+  }
+
+  .feature h3{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding-bottom: 1.875rem;
   }
 }
 
@@ -355,10 +366,15 @@ header .mobile {
 
   #filters-section .images-container {
     padding: 0;
+    width: 100%;
   }
 
   #filters-section .extra {
     display: none;
+  }
+
+  #filters-section .image-container{
+    width: 33%;
   }
 }
 
@@ -399,6 +415,8 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+    font-size: 1rem; /*It's supposed to be 1.5rem*/
+    line-height: 1.4;
   }
 }
 
